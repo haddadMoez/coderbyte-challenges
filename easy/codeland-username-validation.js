@@ -24,6 +24,6 @@
 function CodelandUsernameValidation(str) { 
     if(str.length < 4 || str.length > 25) return false;
     return /^[a-z][a-z0-9_]+[a-z0-9]$/i.test(str);
-  }
+}
      
 console.log(CodelandUsernameValidation('u__hello_world123'));
