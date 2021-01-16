@@ -26,5 +26,4 @@ function CodelandUsernameValidation(str) {
     return /^[a-z][a-z0-9_]+[a-z0-9]$/i.test(str);
   }
      
-  // keep this function call here 
-  console.log(CodelandUsernameValidation('u__hello_world123'));
+console.log(CodelandUsernameValidation('u__hello_world123'));
