@@ -22,7 +22,6 @@
 // Proposed solution
 function ArithGeo(arr) { 
 
-
     arithmeticRatio =arr[1] - arr[0];
     geometricRatio = arr[1] / arr[0];
   
@@ -32,7 +31,7 @@ function ArithGeo(arr) {
   
     while(i+1 <arr.length) {
       if(arr[i+1] - arr[i] != arithmeticRatio) arithmetic = false;
-      if((arr[i+1] / arr[i] )!= geometricRatio) geometric = false;
+      if(arr[i+1] / arr[i] != geometricRatio) geometric = false;
       i++
     }
   
