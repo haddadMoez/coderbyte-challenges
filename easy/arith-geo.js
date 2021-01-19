@@ -28,13 +28,14 @@ function ArithGeo(arr) {
   
     let arithmetic = true;
     let geometric = true;
+    let i = 0;
   
-    for(let i=0; i<arr.length; i++) {
-      if(i+1 <arr.length){
-        if(arr[i+1] - arr[i] != arithmeticRatio) arithmetic = false;
-        if((arr[i+1] / arr[i] )!= geometricRatio) geometric = false;
-      }
+    while(i+1 <arr.length) {
+      if(arr[i+1] - arr[i] != arithmeticRatio) arithmetic = false;
+      if((arr[i+1] / arr[i] )!= geometricRatio) geometric = false;
+      i++
     }
+  
     
     if(arithmetic) return 'Arithmetic';
     if(geometric) return 'Geometric';
